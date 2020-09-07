@@ -6,7 +6,7 @@ import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
 import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
-import StarBorderRoundedIcon from '@material-ui/icons/StarBorderRounded'
+import Favorite from '@material-ui/icons/Favorite'
 
 import Title from './Title'
 
@@ -16,7 +16,7 @@ function createData(id, date, name, carrer, stars, amount) {
 
 const rows = [
   createData(0, '16 Ago, 2020', 'Elvis Presley', 'Cantor', '5', 312.44),
-  createData(1, '16 Ago, 2020', 'Paul McCartney', 'Músico, UK', '5', 866.99),
+  createData(1, '16 Ago, 2020', 'Paul McCartney', 'Músico', '5', 866.99),
   createData(2, '16 Ago, 2020', 'Tom Scholz', 'Compositor', '5', 100.81),
   createData(3, '16 Ago, 2020', 'Michael Jackson', 'Dançarino', '5', 654.39),
   createData(4, '15 Ago, 2020', 'Bruce Springsteen', 'Cantor', '5', 212.79)
@@ -53,7 +53,7 @@ function Orders() {
               <TableCell>{row.date}</TableCell>
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.carrer}</TableCell>
-              <TableCell>{row.stars} <StarBorderRoundedIcon /></TableCell>
+              <TableCell>{row.stars} <Favorite color="error" /></TableCell>
               <TableCell align="right">{row.amount}</TableCell>
             </TableRow>
           ))}

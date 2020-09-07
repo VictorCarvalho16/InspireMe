@@ -28,7 +28,7 @@ function Home() {
   const classes = useStyles()
 
   return (
-    <Layout page="Home">
+    <Layout page="Play Talks">
       <div className={classes.appBarSpacer} />
       <Container maxWidth="lg" className={classes.container}>
         <Grid container spacing={3}>
