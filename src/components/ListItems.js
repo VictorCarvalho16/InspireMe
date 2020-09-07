@@ -7,11 +7,18 @@ import DashboardIcon from '@material-ui/icons/Dashboard'
 import PeopleIcon from '@material-ui/icons/People'
 import LayersIcon from '@material-ui/icons/Layers'
 
+const styles = {
+  cleanLink: {
+    color: 'inherit',
+    textDecoration: 'none'
+  }
+}
+
 function ListItems({page}) {
 
   return (
     <>
-      <Link to="/home">
+      <Link style={styles.cleanLink} to="/home">
         <ListItem button selected={page === "Home"}>
           <ListItemIcon>
             <DashboardIcon />
@@ -19,7 +26,7 @@ function ListItems({page}) {
           <ListItemText primary="Home" />
         </ListItem>
       </Link>
-      <Link to="/search-talks">
+      <Link style={styles.cleanLink} to="/search-talks">
         <ListItem button selected={page === "Procurar Talks"}>
           <ListItemIcon>
             <PeopleIcon />
@@ -27,7 +34,7 @@ function ListItems({page}) {
           <ListItemText primary="Procurar Talks" />
         </ListItem>
       </Link>
-      <Link to="/play-talk">
+      <Link style={styles.cleanLink} to="/play-talk">
         <ListItem button selected={page === "Play Talks"}>
           <ListItemIcon>
             <LayersIcon />
