@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import Avatar from '@material-ui/core/Avatar'
 import Button from '@material-ui/core/Button'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -46,9 +47,11 @@ const useStyles = makeStyles((theme) => ({
 
 function Logon() {
   const classes = useStyles()
+  let history = useHistory()
 
   const handleSubmit = event => {
     event.preventDefault()
+    history.push('/home')
   }
 
   return (

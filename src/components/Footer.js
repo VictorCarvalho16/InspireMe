@@ -21,7 +21,7 @@ function Footer() {
   return (
     <footer className={classes.footer}>
       <Container maxWidth="sm">
-        <Typography variant="body1">InspireMe - Conecte-se com sua inspiração</Typography>
+        <Typography align="center" variant="body1">InspireMe - Conecte-se com sua inspiração</Typography>
         <Copyright />
       </Container>
     </footer>
